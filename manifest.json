@@ -1,0 +1,33 @@
+{
+	"name": "MPFI",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Extension para cargar letras de canciones desde ...",
+	"background": {
+		"scripts": ["js/background.js"] 
+	},
+	 "content_scripts" : [
+    {
+		"matches" : [
+		"http://mpfi:36/*", "http://www.felixmad.es/mpfi/*"],
+		"js" : ["js/jquery.js", "js/script.js"]
+	}
+
+  ],
+	"icons": {
+		"16": "icon/icon16.png",
+		"128": "icon/icon128.png"
+	},
+	"permissions": [
+		"tabs",
+		"http://lyrics.wikia.com/*",
+		"http://itunes/*",
+		"file:///Users/*/Music/iTunes/*"
+  ],
+	"page_action": {
+		"default_icon": "icon/icon16.png",
+		"default_title": "Music player for iTunes"
+	},
+	"content_security_policy": "default-src 'none'; style-src 'self'; script-src 'self'; connect-src file:///Users/josefelixgarridoochoa/Music/iTunes/; img-src file:///Users/josefelixgarridoochoa/Music/iTunes/"
+
+}

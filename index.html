@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>MPFI</title>
+		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+		<meta name = 'viewport' content = 'initial-scale = 1.0, user-scalable = no' />
+		<meta name='apple-mobile-web-app-capable' content='yes' />
+		<meta names='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+		<link rel='shortcut icon' href='favicon.ico' />
+		<link rel='apple-touch-icon' href='image/apple-touch-icon.png' />
+		<link rel='apple-touch-startup-image' href='image/startup.png' />
+		<!-- <script type='text/javascript' src='js/jquery.js'></script>
+		<script type='text/javascript' src='js/script.js'></script>
+		<script type="text/javascript" src="js/id3.js" ></script> -->
+		<link rel='stylesheet' type='text/css' href='css/style.css'>
+	</head>
+	<body class="noSincronizando">
+		<div id="readLibrary">	
+		</div>
+		<div id="loading">
+			<div class="window centerWidth centerHeight">
+				<div><br/><br/>
+					<img src="image/loading.png"/>
+					<p>Espere por favor</p>
+				</div>
+			</div>
+		</div>
+		<div id="playList">
+			<div class="header">
+				<h1>Listas de reproducción</h1>
+			</div>
+			<div class="content">
+				<div class="listado"></div>
+			</div>
+		</div>
+		
+		<div id="listSong">
+			<div class="header">
+				<div class="navigation">
+					<button id="bBack" class="bArrow">Volver</button>
+				</div>
+			</div>
+			<div class="content">
+				<div class="listado"></div>
+			</div>
+		</div>
+
+		<div id="playerSong">
+			<div class="header">
+				<div class="navigation">
+					<button id="bBackList" class="bArrow">Volver</button>
+				</div>
+			</div>
+			<div id='notification'></div>
+			<div class="content">
+				<div id="lyricSong">
+					<div id='introLyric'>
+						<form name='formulario'>
+							<input id="PersistentId" name='PersistentId' type='hidden'>
+							<textarea name='lyric'></textarea>
+						</form>
+					</div>
+					<div id="exitLyric">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="groupFoot">
+			<div>
+				<div id="audio">
+					<div id="botoneraPlayer">
+						<button id="bContinuo"><span></span></button>
+						<button id="bPrev"><span></span></button>
+						<button id="bPlay"><span></span></button>
+						<button id="bNext"><span></span></button>
+						<button id="bAleatorio"><span></span></button>
+					</div>
+					<audio></audio>
+				</div>
+				<div id="setting">
+					<div id="list"></div>
+					<div id="sPlayer">
+						<button id="bSaveSong" class="primary">Guardar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<button id="bSetting"><span></span>Setting</button>
+			</div>
+		</div>
+		<div id="saveJSON"></div>
+	</body>
+</html>
